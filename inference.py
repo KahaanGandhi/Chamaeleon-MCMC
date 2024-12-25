@@ -438,6 +438,8 @@ class SpectralFitMCMC:
                 print(f"{RED}Failed to initialize Ncol via MLE. Exiting.{RESET}")
                 return 
 
+        # exit()
+
         # Initialize walkers in a tight ball around initial values
         pos = []
         count = 0
@@ -607,7 +609,7 @@ if __name__ == "__main__":
         'lower_limit':       18000,         # Lower frequency limit (MHz)
         'upper_limit':       25000,         # Upper frequency limit (MHz)
         'aligned_velocity':  4.10,          # Velocity for spectral alignment (km/s)
-        'fixed_source_size': 52.0,          # Set to a numerical value to fix source size (4 free parameters), None for 5 free parameters
+        'fixed_source_size': 67.0,          # Set to a numerical value to fix source size (4 free parameters), None for 5 free parameters
 
         # MLE initialization option
         'MLE_for_Ncol':      True,          # True for MLE initalization for Ncol; False for template prior
@@ -619,13 +621,11 @@ if __name__ == "__main__":
         'cat_folder':        os.path.join(os.getcwd(), 'catalog'),
         'prior_path':        os.path.join(os.getcwd(), 'results', 'hc5n_hfs', 'chain_template.npy'),
         'data_paths': {
+            'hc5n_hfs':      os.path.join(os.getcwd(), 'data', 'DSN', 'cha_mms1_hc5n_example.npy'),
             # 'hc5n_hfs':      os.path.join(os.getcwd(), 'data', 'DSN', 'cha_c2_hc5n_rereduced.npy'),
-            'hc5n_hfs':      os.path.join(os.getcwd(), 'data', 'DSN', 'cha_mms1_hc5n_rereduced.npy'),
-            'benzonitrile':  os.path.join(os.getcwd(), 'data', 'DSN', 'cha-c2-benzo.npy'),
-            # 'hc5n_hfs':      os.path.join(os.getcwd(), 'data', 'DSN', 'cha_mms1_hc5n_example.npy'),
-            # 'hc7n_hfs':      os.path.join(os.getcwd(), 'data', 'DSN', 'cha_mms1_hc7n_example.npy'),
-            # 'hc5n_hfs':      os.path.join(os.getcwd(), 'data', 'DSN', 'cha_c2_hc5n_example.npy'),
-            # 'hc7n_hfs':      os.path.join(os.getcwd(), 'data', 'DSN', 'cha_c2_hc7n_example.npy'),
+            # 'hc7n_hfs':      os.path.join(os.getcwd(), 'data', 'DSN', 'cha_c2_hc7n_rereduced.npy'),
+            # 'hc7n_hfs':      os.path.join(os.getcwd(), 'data', 'DSN', 'cha_mms1_hc7n_rereduced.npy'),
+            # 'benzonitrile':  os.path.join(os.getcwd(), 'data', 'DSN', 'cha-c2-benzo.npy'),
             # Add more paths here...
         },
     }
