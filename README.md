@@ -3,7 +3,9 @@
   <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python Version">
   <img src="https://img.shields.io/github/last-commit/KahaanGandhi/Chamaeleon-MCMC" alt="Last Commit">
   <img src="https://img.shields.io/github/languages/code-size/KahaanGandhi/Chamaeleon-MCMC" alt="Code Size">
-  <img src="https://img.shields.io/badge/arXiv-2503.01755-red.svg" alt="arXiv">
+  <a href="https://arxiv.org/abs/2503.01755">
+    <img src="https://img.shields.io/badge/arXiv-2503.01755-red.svg" alt="arXiv">
+  </a>
 </p>
 
 Spectroscopic observations enable studies of the chemical composition of star-forming regions based on their distinct molecular emission and absorption spectra. The difficulty of detecting complex organic molecules, which probe chemical complexity, scales with their size — emission from heavy molecules is distributed over many lines, often too weak to detect individually. To address this, Markov Chain Monte Carlo (MCMC) algorithms fit spectral models to sparse spectra, enabling molecular detection through multi-transition radio observations.
@@ -75,14 +77,17 @@ python inference.py
 - Once satisfied, set `prior_path` to the saved location to use it for future non-template runs. You can keep multiple template runs, so check that `prior_path` points to the correct chain for each case.
 - To plot the best-fit model against observed spectra or extract the peak model intensities of each rotational transition, refer to `notebooks/DSN_spectra.ipynb`.
 
-If you have any questions or feedback, feel free to reach out via email at [kahaan@gmail.com](mailto:kahaan@gmail.com).Please cite the software if you found it helpful with your work.
+## Citation
 
-<pre><code>@misc{lis20251825ghzspectroscopicsurvey,
-      title={An 18-25 GHz spectroscopic survey of dense cores in the Chamaeleon I molecular cloud}, 
-      author={Dariusz C. Lis and William D. Langer and Jorge L. Pineda and Kahaan Gandhi and Karen Willacy and Paul F. Goldsmith and Susanna Widicus Weaver and Liton Majumdar and Youngmin Seo and Shinji Horiuchi and Cheikh Bop and François Lique},
-      year={2025},
-      eprint={2503.01755},
-      archivePrefix={arXiv},
-      primaryClass={astro-ph.GA},
-      url={https://arxiv.org/abs/2503.01755}, 
-}</code></pre>
+If you have any questions or feedback, feel free to reach out via email at [kahaan@gmail.com](mailto:kahaan@gmail.com). Please cite the software if you found it helpful with your work.
+
+```bibtex
+@misc{lis20251825ghzspectroscopicsurvey,
+  title         = {An 18-25 GHz spectroscopic survey of dense cores in the Chamaeleon I molecular cloud},
+  author        = {Dariusz C. Lis and William D. Langer and Jorge L. Pineda and Kahaan Gandhi and Karen Willacy and Paul F. Goldsmith and Susanna Widicus Weaver and Liton Majumdar and Youngmin Seo and Shinji Horiuchi and Cheikh Bop and François Lique},
+  year          = {2025},
+  eprint        = {2503.01755},
+  archivePrefix = {arXiv},
+  primaryClass  = {astro-ph.GA},
+  url           = {https://arxiv.org/abs/2503.01755},
+}
