@@ -79,7 +79,7 @@ python inference.py
 
 ## Citation
 
-If you have any questions or feedback, feel free to reach out via email at [kahaan@gmail.com](mailto:kahaan@gmail.com). Please cite the software if you found it helpful with your work.
+Please cite the software if you found it helpful with your work. If you have any questions or feedback, feel free to reach out via email at [kahaan@gmail.com](mailto:kahaan@gmail.com). 
 
 ```bibtex
 @misc{lis20251825ghzspectroscopicsurvey,
