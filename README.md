@@ -67,7 +67,7 @@ python inference.py
 
 ### Step 4: Refining the Fit
 
-- After the initial run, set `template_run` to `False` to load posteriors from the previous run as priors.
+- After the initial run, set `template_run` to `False` to load posteriors from the previous run as priors. Make sure to keep the number of free parameters constant when doing so. 
 - Rerun the script to refine the fit:
 ```bash
 python inference.py
